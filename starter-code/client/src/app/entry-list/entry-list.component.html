@@ -2,5 +2,6 @@
     <li *ngFor="let journal of myJournals">
       {{ journal.title }}
       {{ journal.date }}
+      <a [routerLink]="[journal._id]">Go detail</a>
     </li>
   </ul>
